@@ -14,9 +14,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
             android:text="Home Screen"
-            android:textSize="50sp"/>
+            android:textSize="20sp"/>
+        <ExpandableListView
+            android:id="@+id/expandableListView"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/txt"
+            tools:listitem="@layout/list_parent"
+            android:layout_height="wrap_content"/>
     </RelativeLayout>
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
